@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Product Wise Wons/Losts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+
+  <!-- Latest compiled and minified CSS for selectpicker -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css"> -->
+
+  
+
+  <style type="text/css">
+    #container {
+    min-width: 310px;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto
+    }
+  </style>
+
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Product Wise Wons/Losts</h1>
+</div>
+  
+<div class="container" >
+ 
+    <div class="row" style="padding-left: 5%">
+
+       <!--  <div class="col-sm-4" >
+        </div>
+
+        <div class="col-sm-4" > -->
+          <select id="year" class="selectpicker changeGraph" >
+
+           </select>
+           <select id="product" class="selectpicker changeGraph"  >
+              <option value="Integration">Integration</option>
+              <option value="API Management">API Management</option>
+              <option value="Analytics">Analytics</option>
+              <option value="Security">Security</option>
+              <option value="Governance">Governance</option>
+              <option value="IoT">Mobile/IoT</option>
+              <option value="Partnership">Pratnership</option>
+           </select>
+           <select id="type" class="selectpicker changeGraph" >
+	            <option value="byyear">Byyear</option>
+	            <option value="byquarter">Byquarter</option>
+              <option value="bymonth">Bymonth</option>
+              <option value="byweek">Byweek</option>
+
+            </select>
+           <!-- <button class="btn btn-default"   onclick="val()">submit</button> -->
+           
+       <!--  </div>
+
+        <div class="col-sm-4" >
+        </div> -->
+
+        
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+          <div id="containerTrendChart"></div>
+        </div>
+
+    
+
+    <!-- <div class="row"> -->
+        <div class="col-sm-6">
+          <div id="containerColumnChart"></div>
+        </div>
+
+    </div>
+
+
+   </form> 
+</div>
+
+
+<!-- ajax jquery and bootsrap javascripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- highchart javascripts -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<!-- Latest compiled and minified JavaScript for select picker -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script> -->
+
+<!-- custom javascript-->
+<script type="text/javascript" src="js/wonsLosts.js"></script>
+
+</body>
+</html>
+
